@@ -1,0 +1,247 @@
+/* used colors: blue: #3056a2, gray: #f2f2f2 */
+
+/* For all pages */
+
+body {
+	font-family: 'Poppins', sans-serif;
+  	color: #3056a2;
+  	font-size: 18px;
+  	background-color: white;
+}
+
+/* Banner */
+
+.banner img{
+	width: 300px;
+	padding: 15px;
+}
+
+
+/* Menu bar */
+
+.menu {
+	background-color: #3056a2;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+  
+.menu a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 17px;
+	transition: .3s;
+  }
+
+.currentPage{
+	background-color: rgba(0,0,0,0.50)
+}
+
+.menu a:hover:not(.currentPage) {
+	background-color: rgba(0,0,0,0.50);
+  }
+
+
+/* Footer */
+
+#footer{
+	background-color: #3056a2;
+	 padding: 15px;
+}
+
+.footer-item{
+   width: 200px;
+   text-align: left;
+   padding: 0px 0px 0px 24px;
+   margin: 8px;
+}
+
+#footer h3{
+	text-align: left;
+	text-indent: 235px;
+}
+
+#footer h3, .footer-item p{
+ color: #f2f2f2;
+}
+
+#all-footer-items{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 16px;
+width: 800px;
+margin: auto;
+}
+
+
+/* Main page only */
+
+#mainpageBanner{
+
+  	padding: 150px 0px;
+  	text-align: center;
+	background-color: #3056a2;
+}
+
+#mainpageContainer{
+  	width: 800px;
+  	margin: auto;
+	padding: 20px;
+}
+
+#mainpageContainer > h2{
+	color: #3056a2;
+}
+
+.card-white{
+  	background: white;
+  	box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  	border-radius: 4px;
+  	width: 200px;
+  	text-align: center;
+  	padding: 24px;
+  	margin: 8px;
+	transition: 0.3s;
+}
+
+.card-white > a{
+	color: #3056a2;
+	font-weight: bold;
+	text-decoration: none;
+	transition: .3s;
+}
+
+.card-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+}
+
+.card-white:hover {
+  background-color:rgba(0,0,0,0.1);
+}
+
+
+#cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+
+
+/* SECOND PAGE */
+
+
+#services-container{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+}
+
+
+#flex-container {
+	background-color: white;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+#flex-container > div {
+	background-color: white;
+	box-shadow: 0 0 16px rgba(0,0,0,0.1);
+	color:#3056a2;
+	border-radius: 10px;
+	flex: 1;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 40px;
+	margin: 10px;
+	padding: 16px;
+	width: 60px;
+}
+
+#flex-container > div h2 {
+	text-align:center;
+}
+
+#automation-experience{
+	width: 50%;
+	margin: auto;
+	box-shadow: 0 0 16px rgba(0,0,0,0.1);
+	padding: 16px;
+	border-radius: 10px;
+}
+
+
+/* THIRD PAGE, grid layout */
+
+.item1 { 
+	grid-area: header; 
+	font-size: 40px;
+	padding: 15px;
+	font-weight: bold;
+
+}
+.item2 { 
+	grid-area: picture;
+}
+
+#contact-image{
+	width: 300px;
+	float: right;
+}
+
+.item3 { 
+	grid-area: information; 
+	font-size: 25px;
+	padding: 15px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'picture header header'
+    'picture information information';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+.grid-container > div {
+  text-align: left;
+  background-color:white;
+  color:#3056a2;
+}
+
+/* FOURTH PAGE - Sources */
+
+#sources{
+	width: 60%;
+	margin: auto;
+	padding: 50px;
+}
+
+.article-source{
+	text-decoration: none;
+	color: #3056a2;
+	transition: 0.3s;
+	padding: 3px;
+	border-radius: 4px;
+}
+
+.article-source:hover{
+	background-color: #f2f2f2;
+}
+
+
+
+/* Responsive design */
+
